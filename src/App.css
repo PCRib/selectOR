@@ -1,19 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  font-weight: 600;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -22,11 +42,139 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.selector_nav {
+  padding: 2em;
+  background: #3F5765;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selector_nav .selector_nav-links {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selector_nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.5em;
+}
+
+.selection-card__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7em;
+}
+
+.selection-card__section h1 {
+  margin: 2em 0;
+}
+
+.selection-card__section button {
+  width: 15em;
+  height: 2.75em;
+  background: #ff976e;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.selection-card__section button:hover {
+  background: #FF530D;
+}
+
+.selection-card__section button:focus {
+  background: #FF530D;
+}
+
+.selection-card__section .selection-card__list {
+  width: 100%;
+  margin: 0 0 5em 0;
+}
+
+.selection-card__section .selection-card__list h4 {
+  text-align: left;
+}
+
+.selection-card__section .selection-card__list .selection-card__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selection-card__section .selection-card__list .selection-card__flex .selection-card {
+  width: 15em;
+  height: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background: #EFEFEF;
+  color: #000000;
+  -webkit-box-shadow: 0px 3px 5px 0px #999999;
+          box-shadow: 0px 3px 5px 0px #999999;
+}
+
+.selection-card__section .selection-card__list .selection-card__flex .selection-card:hover {
+  border: 2px solid #FF530D;
+}
+
+.selection-card__section .selection-card__list .selection-card__flex .selection-card:focus {
+  border: 2px solid #FF530D;
+}
+
+.selection-card__section .selection-card__list .selection-card__flex .selection-card .selection-card__img-box {
+  width: 7em;
+  height: 7em;
+}
+
+@-webkit-keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */
