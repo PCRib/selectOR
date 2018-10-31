@@ -6,7 +6,7 @@ import burger from '../images/burger.svg';
 
 
 
-export default class SelectionCard extends Component {
+export default class FoodPage extends Component {
     render() {
         return(
             <div className="selection-card__section">
@@ -19,22 +19,6 @@ export default class SelectionCard extends Component {
                                 <div className="selection-card__img-box">
                                     <img src= {this.props.images[0].path[0].burger} />
                                     <p>Food</p>
-                                </div>
-                            </button>
-                        </Link>
-                        <Link to="/entertainment">
-                            <button className="selection-card">
-                                <div className="selection-card__img-box">
-                                    <img src= {this.props.images[0].path[1].popcorn} />
-                                    <p>Entertainment</p>
-                                </div>
-                            </button>
-                        </Link>
-                        <Link to="/activity">
-                            <button className="selection-card">
-                                <div className="selection-card__img-box">
-                                    <img src= {this.props.images[0].path[2].bike} />
-                                    <p>Activity</p>
                                 </div>
                             </button>
                         </Link>

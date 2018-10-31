@@ -1,12 +1,15 @@
 $siteFont: 'Asap',sans-serif;
 $bodyColor: #EFEFEF;
 $selectionCardColor: #EFEFEF;
-$hoverColor: #FF530D;
-$cardFontColor: #000000;
+$hoverColor: #FDA988;
+$activeColor: #f7d0c1;
+$focusColor: #FF530D;
+$cardFontColor: #3F5765;
 $textBolder: 600;
 
 * {
   box-sizing: border-box;
+  outline: none
 }
 body{
   // background: $bodyColor;
@@ -51,6 +54,12 @@ body{
     text-decoration: none;
     color: aliceblue;
     font-size: 1.5em;
+    &:hover{
+      color: #d1d1d1;
+    }
+    &:active{
+      color: #b3b3b3;
+    }
   }
 }
 .selection-card__section{
@@ -72,8 +81,11 @@ body{
     &:hover{
       background: $hoverColor;
     }
+    &:active{
+      background: $activeColor;
+    }
     &:focus{
-      background: $hoverColor;
+      background: $focusColor;
     }
   }
   .selection-card__list {
@@ -85,6 +97,9 @@ body{
     .selection-card__flex{
       display: flex;
       justify-content: space-between;
+      a{
+        text-decoration: none
+      }
       .selection-card {
         width: 15em;
         height: 15em;
@@ -94,12 +109,13 @@ body{
         border-radius: 10px;
         background: $selectionCardColor;
         color: $cardFontColor;
+        font-weight:$textBolder;
         box-shadow: 0px 3px 5px 0px rgba(153,153,153,1);
          &:hover{
            border: 2px solid $hoverColor;
          }
          &:focus{
-          border: 2px solid $hoverColor;
+          border: 2px solid $focusColor;
         }
         .selection-card__img-box {
           width: 7em;
